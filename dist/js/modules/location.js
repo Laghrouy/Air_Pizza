@@ -57,7 +57,7 @@ export const initLocation = () => {
       labelNode.textContent = label;
     });
     if (locationBadge) {
-      locationBadge.textContent = `Ville : ${label}`;
+      locationBadge.textContent = label;
     }
     if (callButton) {
       const config = callConfig[location] || callConfig.grenoble;

@@ -122,12 +122,15 @@
       </a>
 
       <nav class="nav" aria-label="Navigation principale">
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
-          <span class="nav__toggle-line"></span>
-          <span class="nav__toggle-line"></span>
-          <span class="nav__toggle-line"></span>
-          <span class="sr-only">Ouvrir le menu</span>
-        </button>
+        <div class="nav__meta">
+          <span class="location-badge" data-location-badge>Grenoble</span>
+          <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+            <span class="sr-only">Ouvrir le menu</span>
+          </button>
+        </div>
         <ul class="nav__menu" id="nav-menu">
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#menu">Menu</a></li>
@@ -138,7 +141,6 @@
       </nav>
 
       <div class="header__actions">
-        <span class="location-badge" data-location-badge>Ville : Grenoble</span>
         <button class="btn btn--outline location-trigger" type="button" data-location-open>Choisir la ville</button>
         <a class="btn btn--primary location-inline" data-location="grenoble" href="https://www.ubereats.com/fr/store/air-pizza/Whjcsi50Qn2yzFtjyv4ayA?srsltid=AfmBOoqc-TPBCOHs131E-xV0DAsvCmJDvEwg0oJ5OMxYVxCSkWfh9ehg" target="_blank" rel="noreferrer">Commander</a>
         <a class="btn btn--primary location-inline" data-location="lausanne" href="https://www.ubereats.com/ch-fr/store/air-pizza/6kT8pjg_SGSts5PYt3kzDQ" target="_blank" rel="noreferrer">Commander</a>
