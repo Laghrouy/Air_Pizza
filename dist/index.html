@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Air Pizza | Pizzeria à Grenoble & Lausanne (livraison & sur place)</title>
+  <meta name="description" content="Air Pizza, pizzeria à Grenoble et Lausanne. Pizzas généreuses, esprit basket, livraison rapide et sur place. Consultez le menu et commandez." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Air Pizza" />
+  <meta property="og:title" content="Air Pizza | Pizzeria à Grenoble & Lausanne" />
+  <meta property="og:description" content="Pizzeria à Grenoble et Lausanne. Pizzas généreuses, livraison & sur place. Découvrez le menu Air Pizza." />
+  <meta property="og:image" content="https://votredomaine.com/assets/images/hero.jpg" />
+  <meta property="og:image:alt" content="Air Pizza, pizzas généreuses" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Air Pizza | Pizzeria à Grenoble & Lausanne" />
+  <meta name="twitter:description" content="Pizzeria à Grenoble et Lausanne. Livraison & sur place. Menu Air Pizza." />
+  <meta name="twitter:image" content="https://votredomaine.com/assets/images/hero.jpg" />
+  <link rel="preload" href="assets/images/hero.webp" as="image" type="image/webp" />
+  <link rel="preload" href="assets/images/hero.jpg" as="image" type="image/jpeg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Restaurant",
+          "@id": "https://votredomaine.com/#air-pizza-grenoble",
+          "name": "Air Pizza Grenoble",
+          "image": "https://votredomaine.com/assets/images/hero.jpg",
+          "servesCuisine": ["Pizza", "Italienne"],
+          "priceRange": "€€",
+          "telephone": "+33 7 67 62 10 02",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3 Place du Docteur Léon Martin",
+            "addressLocality": "Grenoble",
+            "postalCode": "38000",
+            "addressCountry": "FR"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "11:30",
+              "closes": "14:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "18:00",
+              "closes": "01:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/airpizza_/",
+            "https://www.facebook.com/p/Air_pizza-100066200679277/?locale=fr_FR"
+          ]
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://votredomaine.com/#air-pizza-lausanne",
+          "name": "Air Pizza Lausanne",
+          "image": "https://votredomaine.com/assets/images/hero.jpg",
+          "servesCuisine": ["Pizza", "Italienne"],
+          "priceRange": "CHF CHF",
+          "telephone": "+41 21 320 29 27",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rue du Grand-Pont 18",
+            "addressLocality": "Lausanne",
+            "postalCode": "1003",
+            "addressCountry": "CH"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "11:30",
+              "closes": "14:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "18:00",
+              "closes": "01:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/airpizza_/",
+            "https://www.facebook.com/p/Air_pizza-100066200679277/?locale=fr_FR"
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+  <section class="location-gate" id="location-gate" aria-labelledby="location-title" aria-describedby="location-desc" aria-hidden="true">
+    <div class="location-gate__content">
+      <p class="location-card__eyebrow">Choisissez votre ville</p>
+      <h1 id="location-title">Air Pizza</h1>
+      <p id="location-desc">Sélectionnez votre ville pour afficher le menu et les infos locales.</p>
+      <p class="location-card__status" id="location-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div class="location-card__actions">
+        <button class="btn btn--primary" type="button" data-location-select="grenoble">Grenoble</button>
+        <button class="btn btn--outline" type="button" data-location-select="lausanne">Lausanne</button>
+      </div>
+      <p class="location-gate__hint">Livraison & sur place · Ambiance basket premium</p>
+    </div>
+  </section>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__content">
+      <a class="logo" href="#top" aria-label="Air Pizza">
+        <span class="logo__mark">AP</span>
+        <span class="logo__text">Air Pizza</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <span class="location-badge" data-location-badge>Ville : Grenoble</span>
+        <button class="btn btn--outline location-trigger" type="button" data-location-open>Choisir la ville</button>
+        <a class="btn btn--primary location-inline" data-location="grenoble" href="https://www.ubereats.com/fr/store/air-pizza/Whjcsi50Qn2yzFtjyv4ayA?srsltid=AfmBOoqc-TPBCOHs131E-xV0DAsvCmJDvEwg0oJ5OMxYVxCSkWfh9ehg" target="_blank" rel="noreferrer">Commander</a>
+        <a class="btn btn--primary location-inline" data-location="lausanne" href="https://www.ubereats.com/ch-fr/store/air-pizza/6kT8pjg_SGSts5PYt3kzDQ" target="_blank" rel="noreferrer">Commander</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+  <!-- Hero -->
+  <section class="hero" id="accueil">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow"><span data-location-label>Grenoble</span> • Air Pizza</p>
+      <h1>Air Pizza — la pizza qui joue en MVP</h1>
+      <p class="hero__subtitle">Recettes généreuses, esprit basket et ingrédients ultra frais. Prêt pour le match ?</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary location-inline" data-location="grenoble" href="https://www.ubereats.com/fr/store/air-pizza/Whjcsi50Qn2yzFtjyv4ayA?srsltid=AfmBOoqc-TPBCOHs131E-xV0DAsvCmJDvEwg0oJ5OMxYVxCSkWfh9ehg" target="_blank" rel="noreferrer">Commander sur Uber Eats</a>
+        <a class="btn btn--primary location-inline" data-location="lausanne" href="https://www.ubereats.com/ch-fr/store/air-pizza/6kT8pjg_SGSts5PYt3kzDQ" target="_blank" rel="noreferrer">Commander sur Uber Eats</a>
+        <a class="btn btn--outline" href="#menu">Voir le menu</a>
+      </div>
+      <div class="hero__badges">
+        <span>MVPizz'</span>
+        <span>Pizzas rouges & blanches</span>
+        <span>Livraison & sur place</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis -->
+  <section class="section section--alt" id="avis">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Avis clients</p>
+        <h2>Ils reviennent pour l’ambiance et les pizzas</h2>
+        <p>Note moyenne de 4,8/5 · plus de 1 200 commandes livrées.</p>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card card card--padded">
+          <div class="review-card__rating">★★★★★</div>
+          <p>“Pizzas généreuses, arrivée chaude et rapide. La MVPizz’ Di Buffala est un banger.”</p>
+          <span class="review-card__meta">Léa · Grenoble</span>
+        </article>
+        <article class="review-card card card--padded">
+          <div class="review-card__rating">★★★★★</div>
+          <p>“Service efficace, super packaging. On commande après chaque match.”</p>
+          <span class="review-card__meta">Théo · Lausanne</span>
+        </article>
+        <article class="review-card card card--padded">
+          <div class="review-card__rating">★★★★☆</div>
+          <p>“Bon rapport qualité-prix, pizzas gourmandes et équipe sympa.”</p>
+          <span class="review-card__meta">Sarah · Grenoble</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Menu officiel Air Pizza · <span data-location-label>Grenoble</span></p>
+        <h2>Des recettes taillées pour le match</h2>
+        <p>Formules, MVPizz’, pizzas rouges & blanches, sides, desserts et boissons.</p>
+      </div>
+      <div class="location-block" data-location="grenoble">
+      <div class="menu-category">
+        <h3 class="menu-category__title">Formules</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d242b413248c3b1eae74e68b9f393984/70aa2a4db7f990373ca9c376323e3dea.jpeg" alt="Formule Duo" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Formule Duo</h4>
+              <p>Découvrez notre formule duo, deux pizzas au choix et une bouteille</p>
+              <span class="price">28,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/2f34ae8d93fc8c8b737b49fbf7b1553c/70aa2a4db7f990373ca9c376323e3dea.jpeg" alt="Pizza + Boisson" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Pizza + Boisson</h4>
+              <p>Découvrez notre formule avec une pizza au choix et sa boisson</p>
+              <span class="price">14,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/f6d2b1354de9e13bf605787d315491c0/70aa2a4db7f990373ca9c376323e3dea.jpeg" alt="Pizza + Boisson + Dessert" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Pizza + Boisson + Dessert</h4>
+              <p>Découvrez notre formule avec une pizza au choix, sa boisson et son dessert</p>
+              <span class="price">17,90 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category__title">MVPizz'</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <span class="pizza-card__badge">Populaire</span>
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d34849a63c6abe101f127ec1e1486c81/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="DI BUFFALA" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>DI BUFFALA</h4>
+              <p>Une pizza raffinée et pleine de fraîcheur ! Une base de sauce tomate maison savoureuse, accompagnée d’emmental fondant et de mozzarella. Ajoutez à cela une délicate chiffonnade de jambon pour un goût authentique. Après cuisson, la mozzarella di buffala crémeuse, la roquette fraîche, les tomates cerise juteuses et une touche de crème de balsamique viennent sublimer cette MVPIzz'.</p>
+              <span class="price">15,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <span class="pizza-card__badge">Populaire</span>
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e6cfe0985890effadab6fff3020c4cf1/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Kryptonite" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Kryptonite</h4>
+              <p>Une pizza gourmande et pleine de caractère ! Sur une base de crème fraîche onctueuse, retrouvez l’association parfaite d’emmental fondant, de mozzarella et de cheddar généreux. Ajoutez à cela du poulet savoureux, du bacon croustillant, des oignons frais, le tout relevé par notre irrésistible sauce Green. Le meilleur crossover que tu puisses trouver !</p>
+              <span class="price">15,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ca1042acefbb0d44a471ae2668db8f06/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BUTCHER" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>BUTCHER</h4>
+              <p>Une pizza riche en saveurs pour les amateurs de viandes ! Sur une base de sauce tomate maison, l’emmental fondant et la mozzarella crémeuse s’allient parfaitement à une garniture généreuse : du bœuf haché savoureux, du poulet rôti tendre et des merguez épicées pour une explosion de goûts.</p>
+              <span class="price">15,90 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category__title">Pizzas Rouges</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/54a9d364767c60240089377bcc0dbd67/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="EASY" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>EASY</h4>
+              <p>Sauce tomate maison, Emmental et Mozzarella</p>
+              <span class="price">15,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6e0d8cca8c949029189c14929ef967e6/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="CHEESY" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>CHEESY</h4>
+              <p>Sauce tomate, emmental, mozzarella, chèvre, bleu.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d55be90dbf5113cd59d00d01d4a36401/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="CHILI THAÏ" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>CHILI THAÏ</h4>
+              <p>Sauce tomate, emmental, mozzarella, poulet rôti, poivrons, oignons frits, sauce chili thaï.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/3eeeb2a69b16f40b0fc95d925df48a37/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="JAMBON" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>JAMBON</h4>
+              <p>Sauce tomate, emmental, mozzarella, et chiffonnade de jambon</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/1ff91263c1839728bc6ddc98a6a4ef16/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FOREST" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>FOREST</h4>
+              <p>Sauce tomate, emmental, mozzarella, champignons et filet de crème fraiche,</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <span class="pizza-card__badge">Populaire</span>
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/886f3fca6ddfce50336d5c952b406e12/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BBQ" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>BBQ</h4>
+              <p>Sauce tomate, emmental, mozzarella, tomates, bœuf haché, poulet rôti, oignons, sauce barbecue.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b8d08336bb9d9a542e2203c78bebb7b7/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="EASTERN" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>EASTERN</h4>
+              <p>Sauce tomate, emmental, mozzarella, merguez, poivrons, oignons, œuf.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ae5fef92f4602170992e07ed625f457c/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="VEGETARIAN" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>VEGETARIAN</h4>
+              <p>Sauce tomate, emmental, mozzarella, champignons, poivrons, oignons, tomates fraiches.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/5c3a54d6ac2650b9903438e2dbf058c9/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BIGGY" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>BIGGY</h4>
+              <p>Sauce tomate, emmental, mozzarella, bœuf haché, cheddar, oignons, sauce burger.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category__title">Pizzas blanches</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e7821107f736dd2f1d1e21ebb8ef718f/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="RAVIOLE" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>RAVIOLE</h4>
+              <p>Crème fraiche, emmental, mozzarella, ravioles.</p>
+              <span class="price">16,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/462b346f34f90328ea6bc8371c4fd52e/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="INDIAN" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>INDIAN</h4>
+              <p>Crème fraiche, emmental, mozzarella, poulet rôti, champignons, oignons, sauce curry.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4e1dd44ffeb4b52eeff115c39f27e983/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="CLIMBER" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>CLIMBER</h4>
+              <p>Crème fraiche, emmental, mozzarella, jambon, oignons, raclette.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/3010cb27f5d89137a755a26a03e34057/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FISHERMAN" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>FISHERMAN</h4>
+              <p>Crème fraiche, emmental, mozzarella, saumon, oignons.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/a9661db74780fbc8e3e01156110e091c/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="SWEETY - SALTY" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>SWEETY - SALTY</h4>
+              <p>Crème fraiche, emmental, mozzarella, chèvre, miel.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4805b2b293356fe587692253d8d389f5/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BOURSIN" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>BOURSIN</h4>
+              <p>Crème fraîche, emmental, mozzarella, poulet rôti, oignons, Boursin</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6c35731a74784b24dd985d649b71061f/70aa2a4db7f990373ca9c376323e3dea.jpeg" alt="KEBAB" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>KEBAB</h4>
+              <p>Crème fraiche, emmental, mozzarella, lamelles de kebab, oignons, sauce blanche.</p>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category__title">Starters / Sides</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/05acf457291aa009eeda15e41535c049/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tenders x 5" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Tenders x 5</h4>
+              <p>Tenders marinés par 5</p>
+              <span class="price">8,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/05acf457291aa009eeda15e41535c049/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tenders x 10" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Tenders x 10</h4>
+              <p>Tenders marinés par 10</p>
+              <span class="price">14,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/acf5957d3d4529af70724bf25e25a027/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Nuggets x 4" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Nuggets x 4</h4>
+              <span class="price">5,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ced85c08d5b94e5e82b7ee11000da404/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Mozza Sticks x 8" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Mozza Sticks x 8</h4>
+              <span class="price">8,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/acf5957d3d4529af70724bf25e25a027/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Nuggets x 16" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Nuggets x 16</h4>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ed17c421bf0f8c68ef7cd8db83d57ade/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Wings x 8" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Wings x 8</h4>
+              <span class="price">8,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ed17c421bf0f8c68ef7cd8db83d57ade/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Wings x 16" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Wings x 16</h4>
+              <span class="price">14,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ced85c08d5b94e5e82b7ee11000da404/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Mozza Sticks x 16" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Mozza Sticks x 16</h4>
+              <span class="price">13,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ced85c08d5b94e5e82b7ee11000da404/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Mozza Sticks x 4" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Mozza Sticks x 4</h4>
+              <span class="price">5,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ed17c421bf0f8c68ef7cd8db83d57ade/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Wings x 3" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Wings x 3</h4>
+              <span class="price">5,90 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category__title">Desserts</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/3356e6c69023bd49727860803456b02a/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tiramisu Caramel Speculoos" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Tiramisu Caramel Speculoos</h4>
+              <p>À chaque commande son nouveau tiramisu !</p>
+              <span class="price">3,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6311b080724d5a9298bcba018b69e959/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="TARTE AUX DAIMS" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>TARTE AUX DAIMS</h4>
+              <span class="price">3,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/14aaa4f1a45d8a99e10b665f6aab984c/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Cheesecake OREO" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Cheesecake OREO</h4>
+              <span class="price">3,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b50131a14a82f08964a9b19c9e2f4e4d/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tiramisu choco-noisette" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Tiramisu choco-noisette</h4>
+              <span class="price">3,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/82a9e23002988a8a7183858a355f2e1d/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tiramisu Caramel Daim" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>Tiramisu Caramel Daim</h4>
+              <span class="price">3,90 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category__title">Boissons</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/aefcd6c986aaa26a052628153641035c/0e5313be7a8831b8ed60f8dab3c2df10.jpeg" alt="COCA COLA 1,5L" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>COCA COLA 1,5L</h4>
+              <span class="price">3,90 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/bc0f76de47e7a9c263157b6886b550e6/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="OASIS POMME CASSIS FRAMBOISE 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>OASIS POMME CASSIS FRAMBOISE 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d515a7a98d5df9f219eb58c961ae2562/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="COCA COLA CHERRY 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>COCA COLA CHERRY 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/0bf8ff9ba4680ff5e86be0ea0d7acc1d/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="SCHWEPPES AGRUMES 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>SCHWEPPES AGRUMES 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://d1ralsognjng37.cloudfront.net/3c77d401-857b-4267-a209-11b97a84a0bc.jpeg" alt="OASIS TROPICAL 2L" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>OASIS TROPICAL 2L</h4>
+              <span class="price">4,40 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6fb066201908505a6396cff7fa74932c/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="OASIS TROPICAL 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>OASIS TROPICAL 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6912c12d7b9fbf4a3308d8f5b71fbed1/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FANTA CITRON 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>FANTA CITRON 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/5e94221018852daaa462fbbf3db64daa/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FANTA MANGO DRAGONFRUIT 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>FANTA MANGO DRAGONFRUIT 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6b2fabc641f6400397d41f7350b38d19/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FANTA ORANGE 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>FANTA ORANGE 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/032b44e518a8b7f078a2b81bf1593a59/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="COCA COLA 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>COCA COLA 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/836f22176e7cc7231f833e933438b2eb/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="COCA COLA ZÉRO 33CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>COCA COLA ZÉRO 33CL</h4>
+              <span class="price">2,00 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/150cdc6b01f0e7f7a69d282c283664b5/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="EAU 50CL" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>EAU 50CL</h4>
+              <span class="price">1,50 €</span>
+            </div>
+          </article>
+          <article class="pizza-card">
+            <img src="https://tb-static.uber.com/prod/image-proc/processed_images/8b12ecb7620ec2135baa6b0ca7bf6e81/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FUZE TEA 1,5L" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>FUZE TEA 1,5L</h4>
+              <span class="price">3,90 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category__title">Compose ta pizz'</h3>
+        <div class="menu-grid">
+          <article class="pizza-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="COMPOSE TA PIZZ'" loading="lazy" />
+            <div class="pizza-card__content">
+              <h4>COMPOSE TA PIZZ'</h4>
+              <p>Personnalise ta pizza avec nos ingrédients frais et gourmands</p>
+              <span class="price">10,50 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      </div>
+      <div class="location-block" data-location="lausanne">
+        <div class="menu-category">
+          <h3 class="menu-category__title">MVPizz'</h3>
+          <div class="menu-grid">
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d34849a63c6abe101f127ec1e1486c81/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="DI BUFFALA" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>DI BUFFALA</h4>
+                <p>Une pizza raffinée et pleine de fraîcheur ! Une base de sauce tomate maison savoureuse, accompagnée d’emmental fondant et de mozzarella. Ajoutez à cela une délicate chiffonnade de jambon pour un goût authentique. Après cuisson, la mozzarella di buffala crémeuse, la roquette fraîche, les tomates cerise juteuses et une touche de crème de balsamique viennent sublimer cette MVPIzz'.</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e6cfe0985890effadab6fff3020c4cf1/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="KRYPTONITE" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>KRYPTONITE</h4>
+                <p>Une pizza gourmande et pleine de caractère ! Sur une base de crème fraîche onctueuse, retrouvez l’association parfaite d’emmental fondant, de mozzarella et de cheddar généreux. Ajoutez à cela du poulet savoureux, du bacon croustillant, des oignons frais, le tout relevé par notre irrésistible sauce kryptonite.  Le meilleur crossover que tu puisses trouver !</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ca1042acefbb0d44a471ae2668db8f06/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BUTCHER" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>BUTCHER</h4>
+                <p>Une pizza riche en saveurs pour les amateurs de viandes ! Sur une base de sauce tomate maison, l’emmental fondant et la mozzarella crémeuse s’allient parfaitement à une garniture généreuse : du bœuf haché savoureux, du poulet rôti tendre et des merguez épicées pour une explosion de goûts.</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-category__title">Pizzas blanches</h3>
+          <div class="menu-grid">
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/3010cb27f5d89137a755a26a03e34057/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FISHERMAN" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>FISHERMAN</h4>
+                <p>Crème fraiche, emmental, mozzarella, saumon, oignons.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/83068bbc13099b1bc84879b5b0821aa3/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="KEBAB" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>KEBAB</h4>
+                <p>Crème fraiche, emmental, mozzarella, lamelles de kebab, oignons, sauce blanche.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/462b346f34f90328ea6bc8371c4fd52e/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="INDIAN" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>INDIAN</h4>
+                <p>Crème fraiche, emmental, mozzarella, poulet rôti, champignons, oignons, sauce curry.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4e1dd44ffeb4b52eeff115c39f27e983/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="CLIMBER" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>CLIMBER</h4>
+                <p>Crème fraiche, emmental, mozzarella, jambon, oignons, raclette.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e7821107f736dd2f1d1e21ebb8ef718f/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="RAVIOLE" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>RAVIOLE</h4>
+                <p>Crème fraiche, emmental, mozzarella, ravioles.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/a9661db74780fbc8e3e01156110e091c/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="SWEETY - SALTY" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>SWEETY - SALTY</h4>
+                <p>Crème fraiche, emmental, mozzarella, chèvre, miel.</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4805b2b293356fe587692253d8d389f5/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BOURSIN" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>BOURSIN</h4>
+                <p>Crème fraîche, emmental, mozzarella ,poulet rôti, oignons, boursin</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-category__title">Desserts</h3>
+          <div class="menu-grid">
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b50131a14a82f08964a9b19c9e2f4e4d/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tiramisu choco-noisette" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Tiramisu choco-noisette</h4>
+                <span class="price">4.50 CHF</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-category__title">Articles en vedette</h3>
+          <div class="menu-grid">
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ca1042acefbb0d44a471ae2668db8f06/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BUTCHER" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>BUTCHER</h4>
+                <p>Une pizza riche en saveurs pour les amateurs de viandes ! Sur une base de sauce tomate maison, l’emmental fondant et la mozzarella crémeuse s’allient parfaitement à une garniture généreuse : du bœuf haché savoureux, du poulet rôti tendre et des merguez épicées pour une explosion de goûts.</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/54a9d364767c60240089377bcc0dbd67/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="EASY" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>EASY</h4>
+                <p>Sauce tomate maison, Emmental et Mozzarella</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/a9661db74780fbc8e3e01156110e091c/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="SWEETY - SALTY" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>SWEETY - SALTY</h4>
+                <p>Crème fraiche, emmental, mozzarella, chèvre, miel.</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ced85c08d5b94e5e82b7ee11000da404/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Mozza Sticks x 4" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Mozza Sticks x 4</h4>
+                <span class="price">5.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/05acf457291aa009eeda15e41535c049/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tenders x 5" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Tenders x 5</h4>
+                <p>Tenders marinés par 5</p>
+                <span class="price">8.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/acf5957d3d4529af70724bf25e25a027/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Nuggets x 4" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Nuggets x 4</h4>
+                <span class="price">5.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ed17c421bf0f8c68ef7cd8db83d57ade/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Wings x 8" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Wings x 8</h4>
+                <span class="price">8.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ced85c08d5b94e5e82b7ee11000da404/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Mozza Sticks x 8" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Mozza Sticks x 8</h4>
+                <span class="price">8.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/83068bbc13099b1bc84879b5b0821aa3/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="KEBAB" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>KEBAB</h4>
+                <p>Crème fraiche, emmental, mozzarella, lamelles de kebab, oignons, sauce blanche.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/05acf457291aa009eeda15e41535c049/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tenders x 10" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Tenders x 10</h4>
+                <p>Tenders marinés par 10</p>
+                <span class="price">14.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4e1dd44ffeb4b52eeff115c39f27e983/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="CLIMBER" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>CLIMBER</h4>
+                <p>Crème fraiche, emmental, mozzarella, jambon, oignons, raclette.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/4805b2b293356fe587692253d8d389f5/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="BOURSIN" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>BOURSIN</h4>
+                <p>Crème fraîche, emmental, mozzarella ,poulet rôti, oignons, boursin</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d34849a63c6abe101f127ec1e1486c81/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="DI BUFFALA" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>DI BUFFALA</h4>
+                <p>Une pizza raffinée et pleine de fraîcheur ! Une base de sauce tomate maison savoureuse, accompagnée d’emmental fondant et de mozzarella. Ajoutez à cela une délicate chiffonnade de jambon pour un goût authentique. Après cuisson, la mozzarella di buffala crémeuse, la roquette fraîche, les tomates cerise juteuses et une touche de crème de balsamique viennent sublimer cette MVPIzz'.</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e6cfe0985890effadab6fff3020c4cf1/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="KRYPTONITE" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>KRYPTONITE</h4>
+                <p>Une pizza gourmande et pleine de caractère ! Sur une base de crème fraîche onctueuse, retrouvez l’association parfaite d’emmental fondant, de mozzarella et de cheddar généreux. Ajoutez à cela du poulet savoureux, du bacon croustillant, des oignons frais, le tout relevé par notre irrésistible sauce kryptonite.  Le meilleur crossover que tu puisses trouver !</p>
+                <span class="price">18.90 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b50131a14a82f08964a9b19c9e2f4e4d/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="Tiramisu choco-noisette" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>Tiramisu choco-noisette</h4>
+                <span class="price">4.50 CHF</span>
+              </div>
+            </article>
+            <article class="pizza-card">
+              <img src="https://tb-static.uber.com/prod/image-proc/processed_images/3010cb27f5d89137a755a26a03e34057/58f691da9eaef86b0b51f9b2c483fe63.jpeg" alt="FISHERMAN" loading="lazy" />
+              <div class="pizza-card__content">
+                <h4>FISHERMAN</h4>
+                <p>Crème fraiche, emmental, mozzarella, saumon, oignons.</p>
+                <span class="price">15.90 CHF</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="section section--alt" id="apropos">
+    <div class="container about">
+      <div class="about__text">
+        <p class="section__eyebrow">Notre histoire</p>
+        <h2>La pizza qui joue collectif</h2>
+        <p>
+          Air Pizza s’inspire de l’énergie du basket : des recettes efficaces, une
+          ambiance d’équipe et un service rapide. Nos bases rouges et blanches sont
+          préparées avec soin pour offrir des pizzas généreuses, taillées pour la perf.
+        </p>
+        <p>
+          Retrouvez-nous à Grenoble et Lausanne pour vivre la même passion du jeu
+          et du goût, en salle ou en livraison.
+        </p>
+        <a class="btn btn--primary" href="#contact">Nous rendre visite</a>
+      </div>
+      <div class="about__media">
+        <picture>
+          <source srcset="assets/images/lausanne.webp" type="image/webp" />
+          <img src="assets/images/lausanne.jpg" alt="Air Pizza" loading="lazy" decoding="async" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact">
+      <div class="contact__info">
+        <p class="section__eyebrow">Contact</p>
+        <h2>Réservez ou commandez</h2>
+        <p>Air Pizza est votre pizzeria à Grenoble et Lausanne : pizzas généreuses, sur place ou en livraison.</p>
+        <div class="contact__locations">
+          <article class="location-block card card--compact" data-location="grenoble">
+            <h3>Grenoble</h3>
+            <ul>
+              <li><strong>Adresse :</strong> 3 Place du Docteur Léon Martin, 38000 Grenoble</li>
+              <li><strong>Téléphone :</strong> <a href="tel:+33767621002">+33 7 67 62 10 02</a></li>
+              <li><strong>Horaires :</strong> Lun–Dim 11h30–14h00 · 18h00–01h00</li>
+              <li><strong>Cuisine :</strong> Italienne · Pizzas · Halal · Américaine</li>
+              <li><strong>Note :</strong> 4,3/5 (400+ avis)</li>
+            </ul>
+          </article>
+          <article class="location-block card card--compact" data-location="lausanne">
+            <h3>Lausanne</h3>
+            <ul>
+              <li><strong>Adresse :</strong> Rue du Grand-Pont 18, 1003 Lausanne, Suisse</li>
+              <li><strong>Téléphone :</strong> <a href="tel:+41213202927">+41 21 320 29 27</a></li>
+              <li><strong>Horaires :</strong> Lun–Dim 11h30–14h00 · 18h00–01h00</li>
+              <li><strong>Cuisine :</strong> Italienne · Pizzas · Halal · Américaine</li>
+              <li><strong>Note :</strong> 4,8/5 (200+ avis)</li>
+            </ul>
+          </article>
+        </div>
+        <div class="contact__actions">
+          <a class="btn btn--primary location-inline" data-location="grenoble" href="https://www.ubereats.com/fr/store/air-pizza/Whjcsi50Qn2yzFtjyv4ayA?srsltid=AfmBOoqc-TPBCOHs131E-xV0DAsvCmJDvEwg0oJ5OMxYVxCSkWfh9ehg" target="_blank" rel="noreferrer">Commander</a>
+          <a class="btn btn--primary location-inline" data-location="lausanne" href="https://www.ubereats.com/ch-fr/store/air-pizza/6kT8pjg_SGSts5PYt3kzDQ" target="_blank" rel="noreferrer">Commander</a>
+          <a class="btn btn--outline" href="https://www.instagram.com/airpizza_/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="contact__map" aria-label="Carte Google Maps">
+        <iframe
+          class="location-block"
+          data-location="grenoble"
+          title="Localisation Air Pizza Grenoble"
+          src="https://www.google.com/maps?q=3+Place+du+Docteur+L%C3%A9on+Martin,+38000+Grenoble&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="location-block"
+          data-location="lausanne"
+          title="Localisation Air Pizza Lausanne"
+          src="https://www.google.com/maps?q=Rue+du+Grand-Pont+18,+1003+Lausanne,+Suisse&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__brand">
+        <span class="logo__text">Air Pizza</span>
+        <p>La pizzeria basket à Grenoble & Lausanne.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Suivez-nous</h4>
+        <div class="socials">
+          <a href="https://www.facebook.com/p/Air_pizza-100066200679277/?locale=fr_FR" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625H4.719V8.05h2.03V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.62-1.303 1.257v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/airpizza_/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.262.222 2.75.42a4.92 4.92 0 0 0-1.776 1.154A4.92 4.92 0 0 0 .82 3.75C.622 4.262.488 4.85.448 5.703.41 6.556.4 6.829.4 9c0 2.171.01 2.444.048 3.297.04.853.174 1.441.372 1.953a4.92 4.92 0 0 0 1.154 1.776 4.92 4.92 0 0 0 1.776 1.154c.512.198 1.1.332 1.953.372C5.556 17.59 5.829 17.6 8 17.6s2.444-.01 3.297-.048c.853-.04 1.441-.174 1.953-.372a4.92 4.92 0 0 0 1.776-1.154 4.92 4.92 0 0 0 1.154-1.776c.198-.512.332-1.1.372-1.953.038-.853.048-1.126.048-3.297s-.01-2.444-.048-3.297c-.04-.853-.174-1.441-.372-1.953a4.92 4.92 0 0 0-1.154-1.776A4.92 4.92 0 0 0 13.25.42c-.512-.198-1.1-.332-1.953-.372C10.444.01 10.171 0 8 0Zm0 1.6c2.13 0 2.383.008 3.223.047.776.036 1.196.165 1.477.274.374.146.64.32.92.6.28.28.454.546.6.92.109.281.238.701.274 1.477.039.84.047 1.093.047 3.223s-.008 2.383-.047 3.223c-.036.776-.165 1.196-.274 1.477a2.9 2.9 0 0 1-.6.92 2.9 2.9 0 0 1-.92.6c-.281.109-.701.238-1.477.274-.84.039-1.093.047-3.223.047s-2.383-.008-3.223-.047c-.776-.036-1.196-.165-1.477-.274a2.9 2.9 0 0 1-.92-.6 2.9 2.9 0 0 1-.6-.920c-.109-.281-.238-.701-.274-1.477C2.408 11.383 2.4 11.13 2.4 9s.008-2.383.047-3.223c.036-.776.165-1.196.274-1.477a2.9 2.9 0 0 1 .6-.92 2.9 2.9 0 0 1 .92-.6c.281-.109.701-.238 1.477-.274C5.617 1.608 5.87 1.6 8 1.6Zm0 2.5a4.9 4.9 0 1 0 0 9.8 4.9 4.9 0 0 0 0-9.8Zm0 1.6a3.3 3.3 0 1 1 0 6.6 3.3 3.3 0 0 1 0-6.6Zm5.1-.9a1.15 1.15 0 1 0 0 2.3 1.15 1.15 0 0 0 0-2.3Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Mentions légales</a>
+        <span>© 2026 Air Pizza. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Retour en haut">↑</button>
+  <div class="toast" id="location-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <a class="sticky-call" data-call-button href="tel:+33767621002" aria-label="Appeler Air Pizza">Appeler</a>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

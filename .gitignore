@@ -1,0 +1,9 @@
+# Ignorer tout par défaut
+/*
+
+# Garder le dossier de déploiement
+!dist/
+!dist/**
+
+# Garder ce fichier
+!.gitignore
