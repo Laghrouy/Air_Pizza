@@ -280,6 +280,12 @@ button:focus-visible {
   background: transparent;
 }
 
+.hero .btn--outline {
+  background: rgba(15, 17, 23, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 .btn--outline:hover {
   background: rgba(255, 255, 255, 0.06);
 }
@@ -888,12 +894,19 @@ body[data-location="lausanne"] .location-inline[data-location="lausanne"] {
   transform: translateX(-50%);
   background: var(--blue);
   color: var(--white);
-  padding: 0.9rem 1.4rem;
+  width: 44px;
+  height: 44px;
   border-radius: 999px;
   font-weight: 700;
   box-shadow: var(--shadow);
   z-index: 19;
   transition: transform var(--transition-fast) var(--ease-out), box-shadow var(--transition-fast) var(--ease-out), background var(--transition-fast) var(--ease-out);
+}
+
+.sticky-call svg {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 .sticky-call:hover {
@@ -1047,9 +1060,9 @@ body[data-location="lausanne"] .location-inline[data-location="lausanne"] {
 
   .sticky-call {
     display: inline-flex;
-    width: auto;
-    padding: 0.55rem 0.9rem;
-    font-size: 0.85rem;
+    width: 44px;
+    height: 44px;
+    padding: 0;
     right: 1rem;
     left: auto;
     bottom: 1rem;
