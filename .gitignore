@@ -7,3 +7,7 @@
 
 # Garder ce fichier
 !.gitignore
+
+# Garder les workflows GitHub Actions
+!.github/
+!.github/**
