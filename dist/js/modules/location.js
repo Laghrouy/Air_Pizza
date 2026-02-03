@@ -63,7 +63,7 @@ export const initLocation = () => {
       const config = callConfig[location] || callConfig.grenoble;
       callButton.href = `tel:${config.tel}`;
       callButton.setAttribute("aria-label", `Appeler Air Pizza ${config.label}`);
-      callButton.textContent = `Appeler ${config.label}`;
+      callButton.setAttribute("title", `Appeler ${config.label}`);
     }
     updateLocationButtons(location);
     setLocationStatus(`Ville sélectionnée : ${label}.`);
