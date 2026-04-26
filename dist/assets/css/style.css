@@ -435,12 +435,10 @@ body[data-location="lausanne"] .location-inline[data-location="lausanne"] {
   color: var(--text);
 }
 
-.logo__mark {
-  background: var(--red);
-  color: var(--white);
-  padding: 0.4rem 0.5rem;
-  border-radius: 12px;
-  font-size: 1rem;
+.logo__image {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .nav {
